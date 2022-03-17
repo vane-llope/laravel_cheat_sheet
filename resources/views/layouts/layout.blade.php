@@ -21,7 +21,13 @@
         </style>
     </head>
     <body >
+        <nav>
+            <div style="background-color: rgb(243, 36, 36); width:100%;height:70px;margin-top:-20px;">
+            <h1 style="text-align: center;padding-top:12px; color:white;">laravel cheat sheet</h1>
+        </div>
+        </nav>
         @yield('content')
+        <div style="height: 100px;"></div>
         <footer style="background:rgb(243, 36, 36); padding:20px; text-align: center; color:white;">
             Copyright 2022 Pizza House
         </footer>

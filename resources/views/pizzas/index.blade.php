@@ -1,6 +1,6 @@
 @extends('layouts.layout')
   @section('content')
-  <div style="display:flex; justify-content: space-around;">
+  <div style="display:flex; justify-content: space-around; margin-top:3%;">
   <div >
     <h1>Pizza House</h1>
     <p>best pizzas you've ever had !!</p>
@@ -26,6 +26,13 @@
       $name = 'shaun';
       echo $name;
      @endphp
+     <h1>pages are :</h1>
+     <p>main(index) page : <br><strong>http://127.0.0.1:8000/</strong></p>
+     <p>main page(Query Parameters) : <br><strong>http://127.0.0.1:8000/?name=zahra&age=23</strong></p>
+     <p>cheat sheet page : <br><strong>http://127.0.0.1:8000/pizzas</strong></p>
+     <p>show (get id) : <br><strong>http://127.0.0.1:8000/pizzas/1</strong></p>
+     <p>fetching data (mysql) : <br><strong>http://127.0.0.1:8000/pizzaRecords</strong></p>
+     <p>create data : <br><strong>http://127.0.0.1:8000/pizzas/create</strong></p>
      </div>
     <!--cloumn 2-->
     <div >
@@ -68,8 +75,11 @@
     at the end go into env file and give<br>
  databases info as well</p>
  <h1>to checkout wildcards<br> the URL :</h1>
- <p><strong>http://127.0.0.1:8000/pizzas/52</strong></p>
+ <p><strong>http://127.0.0.1:8000/pizzas/5</strong></p>
  <p>52 is a eeample , you can use anyother number</p>
+ <h1>data comming from mysql</h1>
+ <p>the URL is :</p>
+ <p><strong>http://127.0.0.1:8000/pizzaRecords</strong></p>
 
  </div>
 </div>
