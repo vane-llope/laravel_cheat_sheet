@@ -26,7 +26,7 @@ class PizzaController extends Controller
 
     public function show($id){
         $pizza=pizza::findOrFail($id);
-        return view('pizzas.show',['id'=>$id],['pizzaid'=> $pizza]) ;
+        return view('pizzas.show',['id'=>$id],['pizza'=> $pizza]) ;
        }
 
     public function showRecords(){
@@ -58,6 +58,7 @@ class PizzaController extends Controller
         $pizza->name= request('name');
         $pizza->type= request('type');
         $pizza->base= request('base');
+        $pizza->toppings= request('toppings');
         if(request('base')=='cheesy crust')
         $pizza ->price=10;
         else if(request('base')=='garlic crust')
@@ -68,7 +69,17 @@ class PizzaController extends Controller
         $pizza ->price=22;
         //to show table record
         //error_log($pizza);
-         $pizza->save();
-        return redirect('/');
+        $pizza->save();
+
+       return redirect('/')->with('msg','Thanks For Your Order');
+  
+    }
+
+    public function destroy($id){
+        $pizza=pizza::findOrFail($id);
+       $pizza -> delete();
+       return redirect('/');
+       
+
     }
 }

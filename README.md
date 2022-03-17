@@ -1,3 +1,11 @@
+#to serve your laravel project
+<p>1.Run composer install.</p>
+<p>2.Run cp .env.example .env.(or just enter databest info in env file)</p>
+<p>3.Run php artisan key:generate.</p>
+<p>4.Run php artisan migrate.</p>
+<p>5.Run php artisan serve.</p>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

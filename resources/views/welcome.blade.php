@@ -19,7 +19,7 @@
         <br>
 
         <div style="background-color: rgb(243, 36, 36); text-align: center; height:40px; padding-top:2%;">
-        <a style="color:white;" href="/pizzas/1">wildcards</a>
+        <a style="color:white;" href="/pizzas/1">wildcards (show or delete orders)</a>
         <br>
 
       </div>
@@ -31,7 +31,7 @@
 
          <br>
          <div style="background-color: rgb(243, 36, 36); text-align: center; height:40px; padding-top:2%;">
-          <a style="color:white;" href="/?name=zahra&age=23">Query Parameters</a>
+          <a style="color:white;" href="/?name=shaun&age=23">Query Parameters</a>
           <p>checkout the URL and the paragraph above</p>
           </div>
         
